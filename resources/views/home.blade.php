@@ -66,7 +66,7 @@
                 <h2 class="bg-primary text-white pw-4 ph-2">CURRENT SERIES</h2>
             </div>
             <div class="flex jc ac">
-                <button class="bg-primary text-white pw-3 ph-1"><b>LOAD MORE</b></button>
+                <button class="bg-primary text-white pw-3 ph-1 mb-3"><b>LOAD MORE</b></button>
             </div>
         </div>
 
@@ -86,5 +86,52 @@
             </ul>
         </div> -->
     </main>
+
+    <!-- ***FOOTER*** -->
+    <footer>
+        <div class="upper-footer">
+            <div class="container flex jb ac">
+                <div class="flex">
+                    <div class="col">
+                        <h3>DC Comics</h3>
+                        <ul>
+                            @foreach ($comics_nav as $item)
+                            <li><a href="#">{{$item['text']}}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>DC Comics</h3>
+                        <ul>
+                            @foreach ($comics_nav as $item)
+                            <li><a href="#">{{$item['text']}}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>DC Comics</h3>
+                        <ul>
+                            @foreach ($comics_nav as $item)
+                            <li><a href="#">{{$item['text']}}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>DC Comics</h3>
+                        <ul>
+                            @foreach ($comics_nav as $item)
+                            <li><a href="#">{{$item['text']}}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+                <!-- DC big logo -->
+                <figure>
+                    <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="logo DC">
+                </figure>
+            </div>
+        </div>
+        <div class="bottom-footer"></div>
+    </footer>
 </body>
 </html>
